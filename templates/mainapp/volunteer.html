@@ -1,42 +1,9 @@
+{% extends 'base.html' %}
 {% load static %}
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CARBON NEUTRAL</title>
-    <link rel="stylesheet" href="{% static '' %}css/bootstrap.min.css">
-    <link rel="stylesheet" href="{% static '' %}css/fancyBox.min.css">
-    <link rel="stylesheet" href="{% static '' %}css/style.css">
-</head>
-<body>
-    
-    <header>
-        <div class="detailed_header">
-            <div class="logo">
-                <a href="index.html" title="CARBON NEUTRAL">
-                    <img src="{% static '' %}assets/images/logo.png" alt="Carbon Neutral">
-                </a>
-            </div>
 
-            <nav class="justify-content-center">
-                <ul>
-                    <li><a href="index.html"> Home </a> </li>
-                    <li><a href="project.html"> Projects </a> </li>
-                    <li><a href="service.html"> Services </a></li>
-                    <li><a href="contact.html"> Contact Us </a></li>
-                    <li><a href="../accounts/login.html"> login </a></li>
-                </ul>
-            </nav>
 
-            <div class="butttons_group">
-                <a class="theme-btn dark" href="volunteer.html" title="">Volunteer</a>
-            </div>
-        </div>
-    </header><!-- Header -->
-
-    <div class="VolunteerTop save_dark pattern3">
+{% block content %}
+   <div class="VolunteerTop save_dark pattern3">
         <div class="container">
             <div class="VolunteerTopWrap">
                 <div class="simpleSlide_Text">
@@ -70,8 +37,8 @@
                                     <div class="simpleSlide_Text">
                                         <span >Help us to help Earth</span>
                                         <h2>We Need Your <strong>Support </strong></h2>
-                                        <p>Earth can be a better place. Lorem ipsum dolor sit dum in sagittis. Nulla or narjusto laoreet onse ctetur adipisci adipiscing elitliquam vitae fring.</p>	
-                                    </div>                                        
+                                        <p>Earth can be a better place. Lorem ipsum dolor sit dum in sagittis. Nulla or narjusto laoreet onse ctetur adipisci adipiscing elitliquam vitae fring.</p>
+                                    </div>
 
                                     <form class="volunteer-form" action="#">
                                         <div class="row row-gap-30">
@@ -98,7 +65,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                    </form>	                                        
+                                    </form>
                                 </div>
                             </div>
                         </div>
@@ -108,5 +75,7 @@
         </div>
     </section>
 <script src="{% static '' %}https://kit.fontawesome.com/e0f92875ad.js" crossorigin="anonymous"></script>
-</body>
-</html>
+
+{% endblock %}
+
+
