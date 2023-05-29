@@ -1,0 +1,159 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<div class="VolunteerTop save_dark pattern3">
+    <div class="container">
+        <div class="VolunteerTopWrap">
+            <div class="simpleSlide_Text">
+                <span class="coloredText">SHINE BRIGHT THE WORLD NEEDS YOU</span>
+                <h2 class="m-0 rong">KEEP IN TOUCH <strong> LET US REACH YOU</strong></h2>
+            </div>
+
+            <div class="breadCrumbs">
+                <ul>
+                    <li><a href="index.html" title="">Home</a></li>
+                    <li>VOLUNTEER</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<section>
+    <div class="block ">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="contact-form">
+                        <h3 class="subtitle"><i>Leave</i> A Message</h3>
+
+                        <form class="contact_Form" action="#">
+                            <div class="row row-gap-30">
+                                <div class="col-lg-12">
+                                    <div class="form-field"> <input type="text" class="form-control" placeholder="Your Name" required=""></div>
+                                </div>
+                                <div class="col-lg-12">
+                                    <div class="form-field"> <input type="email" class="form-control" placeholder="Your Email" required=""></div>
+                                </div>
+                                <div class="col-lg-12">
+                                    <div class="form-field"> <textarea name="message" class="form-control" placeholder="Message" rows="5"></textarea> </div>
+                                </div>
+                                <div class="col-lg-12">
+                                    <div class="d-flex">
+                                        <button type="submit" class="theme-btn ms-auto" title="">Send Message</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="contact-box">
+                        <h4>Dont Hesitate to <br> <i>Contact Us</i></h4>
+                        <ul class="info-list">
+                            <li><i>ADDRESS</i>		<span>1111-A Nowhere Lane, Outta Sight, State 90378, USA</span></li>
+                            <li><i>EMAIL</i>		<span>johnathandoe@suelo.pl</span></li>
+                            <li><i>PHONE</i>		<span>+0(31)6 89764536</span></li>
+                        </ul>
+                        <div class="everCare_social mt-4">
+                            <a href="#" title=""> <ion-icon class="facebook"  name="logo-facebook"></ion-icon> </a>
+                            <a href="#" title=""> <ion-icon class="linkedin" name="logo-linkedin"></ion-icon> </a>
+                            <a href="#" title=""> <ion-icon class="twitter"  name="logo-twitter"></ion-icon> </a>
+                            <a href="#" title=""> <ion-icon class="youtube"  name="logo-youtube"></ion-icon> </a>
+                        </div>
+                    </div><!-- Contact Box -->
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% endblock %}
+
+
+
+
+<footer>
+    <div class="block save_dark pattern3">
+        <div class="container">
+            <div class="row row-gap-30">
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="everCare_donate_widget">
+                        <div class="logo">
+                            <a href="index.html" title="Ever Care">
+                                <img src="{% static '' %}assets/images/logo.png" alt="Ever Care">
+                            </a>
+                        </div>
+
+                        <p>Charity fundraising ideas, and fundraise or crowdfund for an Australian charity close to your heart..</p>
+
+                        <a class="theme-btn dark2 "  data-bs-toggle="modal" data-bs-target="#donationModal" href="https://www.bkash.com/" title="">Donate Now</a>
+
+                    </div><!--  Ever Care Donate Widget-->
+                </div>
+
+                <div class="col-lg-2 col-md-6 col-sm-12">
+                    <div class="line_title"> <h3>Contact Info</h3> </div>
+
+                    <div class="everCare_contact_widget">
+                        <ul>
+                        <li> 8954 King Town, Phase 11</li> 
+                        <li>  Contact@succor.net</li> 
+                        <li>  0090-123456-789</li> 
+                        <li>  0090-123456-789</li> 
+                        </ul>
+
+                    
+                    </div><!-- Ever Care Contact Widget -->
+                </div>
+
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="line_title"> <h3>Urgent Causes</h3> </div>
+
+                    <div class="widget_posts_wrap row-gap-20">
+                        <div class="widget_post">
+                            <a class="widget_post_thumb" href="causesDetails.html"> <img src="{% static '' %}assets/images/widgets/thumb1.jpg" alt=""> </a>
+                            <div class="widget_post_detail">
+                                <h5> <a href="blogDetails.html" title="#">Contribute For Food hunger </a> </h5>
+                                <span>03 December 2022</span>
+                            </div>
+                        </div>
+                        <div class="widget_post">
+                            <a class="widget_post_thumb" href="causesDetails.html"> <img src="{% static '' %}assets/images/widgets/thumb2.jpg" alt=""> </a>
+                            <div class="widget_post_detail">
+                                <h5> <a href="blogDetails.html" title="#">Contribute For Food hunger </a> </h5>
+                                <span> 03 December 2022</span>
+                            </div>
+                        </div>
+                        <div class="widget_post">
+                            <a class="widget_post_thumb" href="causesDetails.html"> <img src="{% static '' %}assets/images/widgets/thumb3.jpg" alt=""> </a>
+                            <div class="widget_post_detail">
+                                <h5> <a href="blogDetails.html" title="#">Contribute For Food hunger </a> </h5>
+                                <span> 03 December 2022</span>
+                            </div>
+                        </div>
+                    </div><!-- Urgent Cause -->
+                </div>
+
+
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="line_title"> <h3>Meet Us Anytime</h3> </div>
+                     
+                    <ul>
+                        <li> 8954 King Town, Phase 11</li> 
+                        <li>  Contact@succor.net</li> 
+                        <li>  0090-123456-789</li> 
+                        <li>  0090-123456-789</li> 
+                        </ul>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

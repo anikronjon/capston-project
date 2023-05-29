@@ -1,0 +1,25 @@
+{% load static %}
+<header class="transparent">
+            <div class="header_wrap container">
+                <div class="logo">
+                    <a href="{% url 'mainapp:home_page' %}" title="CARBON NEUTRAL">
+                        <img src="{% static '' %}assets/images/logo.png" alt="Carbon Neutral">
+                    </a>
+                </div>
+
+                <nav class="justify-content-center">
+                    <ul>
+                        <li><a href="{% url 'mainapp:home_page' %}"> Home </a> </li>
+                        <li><a href="{% url 'mainapp:project_page' %}"> Projects </a> </li>
+                        <li><a href="{% url 'mainapp:service_page' %}"> Services </a></li>
+                        <li><a href="{% url 'mainapp:contact_page' %}"> Contact Us </a></li>
+                        <li><a href="{% url 'accounts:login' %}"> SignIn </a>/ <a href="{% url 'accounts:registration' %}">SignUp</a></li>
+                    </ul>
+                </nav>
+
+                <div class="butttons_group">
+                    <a class="theme-btn white"  href="https://www.bkash.com/" title="">Donate Now</a>
+                    <a class="theme-btn" href="mainapp/volunteer.html" title="">Volunteer</a>
+                </div>
+            </div>
+        </header><!-- Header -->

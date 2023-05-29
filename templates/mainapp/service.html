@@ -1,0 +1,231 @@
+{% extends 'base.html' %}
+{% load static %}
+
+
+{% block content %}
+    <section>
+        <div class="block pt-0 pattern1">
+            <div class="container">
+                <br>
+                <br>
+                <br>
+                <div class="double_title">
+                    
+                    <h2>Available Services</h2>
+                </div>
+                
+                <div class="row row-gap-30 ev_slider">
+
+                    <div class="col-lg-4 col-md-12">
+                        <div class="save_cause">
+                            <div class="save_cause_img">
+                                <img src="{% static '' %}assets/images/home decore/4.jpg" alt=" Contribute for saving climate ">
+                                <a class="cause_cat" href="project.html" title="">Order Now</a>
+                            </div>
+                            <div class="save_cause_details">
+                                <h3> <a href="project.html" title=""> Contribute to Stop Wildfire </a></h3>
+                                <p>Supporting the global response to the threat of climate change. Advancing the implementation of the Convention, the Kyoto Protocol and the Paris Agreement</p>
+                        
+                                <a class="seeMore" href="{% url 'mainapp:service_page' %}" title="">See Details</a>
+                                
+                            </div>
+                        </div><!-- Save planet  -->
+                    </div>
+
+                    <div class="col-lg-4 col-md-12">
+                        <div class="save_cause">
+                            <div class="save_cause_img">
+                                <img src="{% static '' %}assets/images/home decore/3.jpg" alt="Contribute for saving climate">
+                                <a class="cause_cat" href="{% url 'mainapp:paymentPage' %}" title="">Order Now</a>
+                            </div>
+                            <div class="save_cause_details">
+                                <h3> <a href="project.html" title=""> Contribute to Reduce Impact </a></h3>
+                                <p>Supporting the global response to the threat of climate change. Advancing the implementation of the Convention, the Kyoto Protocol and the Paris Agreement</p>
+                              
+
+                                <a class="seeMore" href="service.html" title="">See Details</a>
+                            </div>
+                        </div><!-- Save planet -->
+                    </div>
+
+                    <div class="col-lg-4 col-md-12">
+                        <div class="save_cause">
+                            <div class="save_cause_img">
+                                <img src="{% static '' %}assets/images/home decore/4.jpg" alt="Contribute for saving climate">
+                                <a class="cause_cat" href="project.html" title="">Order Now</a>
+                            </div>
+                            <div class="save_cause_details">
+                                <h3> <a href="project.html" title=""> Contribute to Save Glacier </a></h3>
+                                <p>Supporting the global response to the threat of climate change. Advancing the implementation of the Convention, the Kyoto Protocol and the Paris Agreement</p>
+                            
+
+                                <a class="seeMore" href="service.html" title="">See Details</a>
+                            </div>
+                        </div><!-- Save planet -->
+                    </div>
+
+
+                </div>
+              
+            </div>
+        </div>
+    </section>
+
+<section>
+    <div class="block pt-0 pattern1">
+        <div class="container">
+            <br>
+            <br>
+            <br>
+            <div class="double_title">
+                
+                <h2> Mega Projects</h2>
+            </div>
+            
+            <div class="row row-gap-30 ev_slider">
+
+                <div class="col-lg-4 col-md-12">
+                    <div class="save_cause">
+                        <div class="save_cause_img">
+                            <a class="cause_cat" href="project.html" title=""> Order Now </a>
+                            <img src="{% static '' %}assets/images/deforestation/1.jpg" alt=" Contribute for saving climate ">
+                            
+                        </div>
+                        <div class="save_cause_details">
+                            <h3> <a href="project.html" title=""> We Have Plans for Highways </a></h3>
+                            <p>Supporting the global response to the threat of climate change. Advancing the implementation of the Convention, the Kyoto Protocol and the Paris Agreement</p>
+                    
+                            <a class="seeMore" href="../accounts/login.html" title="">See Details</a>
+                            
+                        </div>
+                    </div><!-- Save planet  -->
+                </div>
+
+                <div class="col-lg-4 col-md-12">
+                    <div class="save_cause">
+                        <div class="save_cause_img">
+                            <a class="cause_cat" href="project.html" title=""> Order Now </a>
+                            <img src="{% static '' %}assets/images/deforestation/2.jpg" alt="Contribute for saving climate">
+                           
+                        </div>
+                        <div class="save_cause_details">
+                            <h3> <a href="project.html" title=""> Enroll our Plan now </a></h3>
+                            <p>Supporting the global response to the threat of climate change. Advancing the implementation of the Convention, the Kyoto Protocol and the Paris Agreement</p>
+                          
+
+                            <a class="seeMore" href="../accounts/login.html" title="">See Details</a>
+                        </div>
+                    </div><!-- Save planet -->
+                </div>
+
+                <div class="col-lg-4 col-md-12">
+                    <div class="save_cause">
+                        <div class="save_cause_img">
+                            <a class="cause_cat" href="project.html" title=""> Order Now </a>
+                            <img src="{% static '' %}assets/images/deforestation/3.jpg" alt="Contribute for saving climate">
+                           
+                        </div>
+                        <div class="save_cause_details">
+                            <h3> <a href="project.html" title=""> Contribute Plant a Tree </a></h3>
+                            <p>Supporting the global response to the threat of climate change. Advancing the implementation of the Convention, the Kyoto Protocol and the Paris Agreement</p>
+                        
+
+                            <a class="seeMore" href="../accounts/login.html" title="">See Details</a>
+                        </div>
+                    </div><!-- Save planet -->
+                </div>
+
+
+            </div>
+          
+        </div>
+    </div>
+</section>
+
+{% endblock %}
+    
+
+<footer>
+    <div class="block save_dark pattern3">
+        <div class="container">
+            <div class="row row-gap-30">
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="everCare_donate_widget">
+                        <div class="logo">
+                            <a href="index.html" title="Ever Care">
+                                <img src="{% static '' %}assets/images/logo.png" alt="Ever Care">
+                            </a>
+                        </div>
+
+                        <p>Charity fundraising ideas, and fundraise or crowdfund for an Australian charity close to your heart..</p>
+
+                        <a class="theme-btn dark2 "  data-bs-toggle="modal" data-bs-target="#donationModal" href="https://www.bkash.com/" title="">Donate Now</a>
+
+                    </div><!--  Ever Care Donate Widget-->
+                </div>
+
+                <div class="col-lg-2 col-md-6 col-sm-12">
+                    <div class="line_title"> <h3>Contact Info</h3> </div>
+
+                    <div class="everCare_contact_widget">
+                        <ul>
+                        <li> 8954 King Town, Phase 11</li> 
+                        <li>  Contact@succor.net</li> 
+                        <li>  0090-123456-789</li> 
+                        <li>  0090-123456-789</li> 
+                        </ul>
+
+                    
+                    </div><!-- Ever Care Contact Widget -->
+                </div>
+
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="line_title"> <h3>Urgent Causes</h3> </div>
+
+                    <div class="widget_posts_wrap row-gap-20">
+                        <div class="widget_post">
+                            <a class="widget_post_thumb" href="causesDetails.html"> <img src="{% static '' %}assets/images/widgets/thumb1.jpg" alt=""> </a>
+                            <div class="widget_post_detail">
+                                <h5> <a href="blogDetails.html" title="#">Contribute For Food hunger </a> </h5>
+                                <span>03 December 2022</span>
+                            </div>
+                        </div>
+                        <div class="widget_post">
+                            <a class="widget_post_thumb" href="causesDetails.html"> <img src="{% static '' %}assets/images/widgets/thumb2.jpg" alt=""> </a>
+                            <div class="widget_post_detail">
+                                <h5> <a href="blogDetails.html" title="#">Contribute For Food hunger </a> </h5>
+                                <span> 03 December 2022</span>
+                            </div>
+                        </div>
+                        <div class="widget_post">
+                            <a class="widget_post_thumb" href="causesDetails.html"> <img src="{% static '' %}assets/images/widgets/thumb3.jpg" alt=""> </a>
+                            <div class="widget_post_detail">
+                                <h5> <a href="blogDetails.html" title="#">Contribute For Food hunger </a> </h5>
+                                <span> 03 December 2022</span>
+                            </div>
+                        </div>
+                    </div><!-- Urgent Cause -->
+                </div>
+
+
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="line_title"> <h3>Meet Us Anytime</h3> </div>
+                     
+                    <ul>
+                        <li> 8954 King Town, Phase 11</li> 
+                        <li>  Contact@succor.net</li> 
+                        <li>  0090-123456-789</li> 
+                        <li>  0090-123456-789</li> 
+                        </ul>
+
+
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>

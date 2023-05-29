@@ -1,0 +1,360 @@
+
+@import url('https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i');
+:root{
+    --theme-color:#87F63C;
+    --theme-dark: #312e2e;
+    --theme-font-size: 13px;
+    --theme-font-color: #8b8b8b;
+    --theme-title-size: 20px;
+    --theme-title-color: #181818;
+    --theme-transition: all 0.2s linear;
+}
+
+
+body{
+    font-family: 'Poppins';
+    font-size: var(--theme-font-size);
+    color: var(--theme-font-color);
+}
+
+
+
+
+strong {font-weight: 600;}
+button{border:0}
+h1,h2,h3,h4,h5,h6{
+    color: var(--theme-title-color);
+    line-height:1.5;
+}
+
+a{
+    color:var(--theme-color);
+    text-decoration: none;
+}
+
+a:hover,
+a:focus{
+    text-decoration:none;
+    outline:none;
+}
+
+input:hover,input:focus {outline:none}
+a:hover {color:var(--theme-color)}
+
+
+h1 > a,h2 > a, h3 > a, h4 > a, h5 > a, h6 > a {color: var(--theme-title-color)}
+p {line-height: 180%; font-size: 14px}
+ol, ul {line-height: 200%}
+
+
+/*=============== Transparent Header ===================*/
+
+ header.transparent {position: absolute;left: 0;top: 0;width: 100%; color: #FFF;z-index:3;}
+.header_wrap.container {display: flex;align-items: center;}
+.header_wrap {display: flex;padding: 20px 15px 0;align-items: center;}
+
+
+nav {flex: auto;display: flex;justify-content: center; padding:0 30px}
+nav > ul {list-style: none;display: flex;column-gap: 50px; margin:0}
+nav ul{list-style: none; margin: 0; padding: 0;}
+nav > ul > li{position: relative;}
+nav > ul > li > a {text-decoration: none;font-size: 16px;color: #333;padding: 20px 0;display: flex;}
+header.transparent nav > ul > li > a{color: #FFF;}
+header.transparent nav > ul > li > a:hover{color: rgb(0, 255, 98);}
+
+/*=============== Amar onno page gular Header style  ===================*/
+.detailed_header{display: flex;background: #FFF;box-shadow: 0 0 13px rgba(0,0,0,0.2);align-items: center}
+.detailed_header .logo {background: var(--theme-dark);min-height: 140px;display: flex;align-items: center;min-width: 280px;justify-content: center}
+.header_right{display: flex;flex-direction: column;flex: auto;min-height: 140px}
+.header_topBar {display: flex; background: #f8f8f8;align-items: center;border-bottom: 1px solid #dbdbdb;padding: 5px  2%;line-height: 1.3}
+
+
+/* ,,,,,,,,,BUTTONS ,,,,,,,,, */
+
+.butttons_group {display: flex;column-gap:10px;row-gap: 10px; align-items: center;}
+.theme-btn {
+    border: 0;background: var(--theme-color);color: #FFF;font-size: 15px;font-weight: 
+    500;min-height: 49px;display:inline-flex;align-items: center;min-width: 150px;justify-content: 
+    center;column-gap: 10px;border-radius: 50px;position: relative;z-index: 1;
+    padding: 5px 30px;overflow: hidden; 
+}
+
+.theme-btn:before{content: "";position: absolute;left: 0;top: 0;width: 100%;height: 50%;z-index: -1;background: #000;opacity: 0.1;transition: var(--theme-transition);}
+.theme-btn:hover {color: #FFF;}
+.theme-btn:hover:before {top: 50%;}
+.theme-btn.white{background-color: #FFF;color: #312e2e;font-weight: 600;}
+.theme-btn.dark{background-color: #312e2e;}
+.theme-btn.dark2{background-color: #5a5858;}
+.theme-btn.small {min-height: 40px;font-size: 13px;min-width: 100px;}
+.theme-btn.smallest{min-height: 35px;font-size: 11px;min-width: 100px;padding: 0 15px}
+.theme-btn.round{border-radius: 150px; min-width: 0; min-height: 0; width: 50px; height: 50px; padding:0}
+
+/*=============== header picture ===================*/
+
+.dark_slider{
+    width: 100%;
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+    background-color: #161616;
+  
+  
+}
+.dark_slider img {
+    height: 100%;
+    float: right;
+}
+.darkSliderTextWrap {position: absolute;left: 0;width: 100%;height: 100%;display: flex;align-items: center;justify-content: center;top: 0;color: #FFF;}
+.darkSlider_text h3 {font-size: 75px;font-weight: 100;color: #FFF;}
+
+/*=============== Save Planet Double Title ===================*/
+.double_title {
+    text-align: center;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 100px;
+}
+.double_title h2 {font-size: 70px;font-weight: 400;color: #161616;margin: 0;line-height: 1;position: relative;z-index: 1;margin-top: -20px;}
+.double_title h2:before {content: "";position: absolute;left: 0;top: 0;width: 75px;height: 75px;background: var(--theme-color);z-index: -1;}
+.double_title > i {font-size: 125px;position: absolute;font-style: normal;line-height: 0.9;color: #f5f5f5;font-weight: 800;left: 0;width: 100%;top: -60px;z-index: -1; transition: var(--theme-transition);}
+section:hover .double_title i {top: -80px;}
+
+
+/*=============== Cards  evec to save ===================*/
+
+.save_cause {display: flex;flex-direction: column;background: #FFF;border-radius: 15px;box-shadow: 0 0 17px rgb(0 0 0 / 17%);overflow: hidden;}
+.save_cause_img {display: flex;position: relative;flex-direction: column;border-radius: 15px 15px 0 0;}
+.save_cause_img img {width: 100%;}
+a.cause_cat {position: absolute;left: 50%;bottom: 0;transform: translate(-50%, 50%);background: var(--theme-color);color: #FFF;border-radius: 20px;padding: 5px 20px;transition: all 0.1s linear;}
+a.cause_cat:hover {padding: 3px 30px;}
+.save_cause_details {padding: 35px 35px 25px}
+.save_cause_details h3 {font-size: 20px;font-weight: 600;}
+.save_cause_details p {line-height: 23px;}
+a.seeMore {margin: 20px auto 0;display: table;font-size: 14px;color: #312e2e;font-weight: 600;transition: var(--theme-transition);}
+a.seeMore:hover {color: var(--theme-color);letter-spacing: 1.2px}
+
+.pattern1 {background: url(../assets/images/pattern1.jpg);}
+
+/*=============== Appeal ===================*/
+.save_appeal {display: flex;flex: auto;}
+.save_appeal_img {z-index: 1;position: absolute;right: 0;top: 150px;border-left: 15px solid #FFF;border-top: 15px solid #FFF;border-bottom: 15px solid #FFF;box-shadow: 0 0 17px rgb(0 0 0 / 17%);}
+.save_appeal_text {min-height: 670px;display: flex;justify-content: center;flex-direction: column;width: 890px;position: relative;padding-right: 25%;z-index: 1;color: #FFF;}
+.save_appeal_text:before,.save_appeal_text:after {content: "";position: absolute;right: 0;top: 0;width: 200%;height: 100%;background: var(--theme-color);z-index: -1;opacity: 0.8;}
+.save_appeal_text:after {background: url(../assets/images/treeplantaton/design1.jpg);opacity: 1;z-index: -2;background-size: cover;background-repeat: no-repeat;background-position: center;}
+.save_appeal_text h3 {font-size: 50px;color: #FFF;font-weight: 200;margin-bottom: 20px;}
+.save_appeal_text p {font-size: 15px;font-weight: 200;padding-right: 60px;line-height: 1.6;margin-bottom: 40px;}
+
+
+
+.block {padding: 150px 0; position: relative;}
+.topPadding_low {padding-top:70px}
+.bottomPadding_low {padding-bottom:70px}
+.block.overlap {padding-top: 0;margin-top: -100px;}
+
+/*=============== Join Our Compaign ===================*/
+.join_compaign { text-align: center;display: flex;flex-direction: column;align-items: center;}
+.join_compaign h2{font-size: 40px; font-weight: 300; margin-bottom: 10px;}
+.join_compaign p{font-size: 15px; opacity: 0.5; line-height: 27px; margin-bottom: 20px; color: #FFF; padding: 0 10%;}
+
+.save_dark{background-color: #312e2e!important;}
+.save_dark :where(h1,h2,h3,h4,h5,h6,p) {
+    color: #FFF;
+}
+.save_gray{background-color: #f4f4f4!important;}
+
+
+
+
+/*=============== Volunteer ===================*/
+.pattern3 {background: url(../assets/images/treeplantaton/design2.png); background-position: left top;background-repeat: no-repeat;background-size: auto 100%;}
+.VolunteerTop{min-height: 270px;display: flex;background-size: 100%;background-position: center bottom ;  background-color: var(--theme-title-color);}
+.VolunteerTopWrap{display:flex;align-items:center;height:100%}
+.breadCrumbs{margin-left:auto}
+.breadCrumbs ul{list-style:none;padding:0;margin:0;display:flex;font-size:15px;column-gap:20px;font-weight:600}
+.breadCrumbs ul li{color:var(--theme-color)}
+.breadCrumbs ul li a{font-weight:300;position:relative}
+.breadCrumbs ul li a:after{content:" > ";position:absolute;right:-13px;top:0}
+header.transparent~.VolunteerTop{padding-top:90px;min-height:370px}
+
+/*=============== Become Volunteer ===================*/
+.become-volunteer{border-radius:2px;float:left;padding:90px 70px;position:relative;width:100%;z-index:1}
+.become-volunteer:before{background:rgba(242,242,241,.95);content:"";height:100%;left:0;position:absolute;top:0;width:100%;z-index:-1}
+.volunteer-thumb{width:100%}
+.volunteer-thumb>img{width:100%}
+.become-volunteer .title,.become-volunteer p{text-align:left}
+.become-volunteer .title{margin:0 0 30px}
+ 
+
+/*=============== Login  Box ===================*/
+.fullbg{ background-image:url(/assets/images/road.jpeg); background-repeat: no-repeat; background-size: cover; background-position: center;}
+
+.login-box{ 
+            border-radius: 20px; width: 90%; max-width: 450px; position: absolute; 
+            top:50% ;left: 50% ; transform: translate(-50%,-50%) ; background-color: rgba(255,255,255,0.13); 
+            backdrop-filter: blur(5px);text-align: center;padding: 50px 50px 70px; }
+.textbox { width: 100%; overflow: hidden; margin: 50px 0; padding: 50px 0; display: block; border-radius: 10px; }
+
+input{ width: 100%; padding: 15px; margin-top: 20px ; border-radius: 10px ;}
+
+
+ /* ................Project page ...........*/
+
+ .our_engineer {margin: 0 auto;display: table;display: flex;flex-direction: column;align-items: center;position: relative;z-index: 1;overflow: hidden; color: #FFF;}
+img{ height: inherit;}
+.engineer_img { height: 200px; width: 200px; border-radius: 50%;overflow: hidden;border: 5px solid #FFF;box-shadow: 0 0 10px rgb(0 0 0 / 40%);margin-top: 0;position: absolute;left: 50%;top: 10px;transform: translateX(-50%);z-index: 10;}
+.engineer_info {text-align: center;margin-top: 90px;width: 340px;height: 340px;background:var(--theme-dark);z-index: 1;border-radius: 50%;position: relative;overflow: hidden;display: flex;align-items: center;justify-content: center;flex-direction: column;padding: 170px 30px 0;}
+.engineer_info:before {content: "";position: absolute;left: 50%;bottom: -60px;width: 215px;height: 215px;background: var(--theme-color);transform: translateX(-50%);border-radius: 50%;z-index: -1;   transition: var(--theme-transition);}
+.engineer_info i {font-style: normal;margin-bottom: 5px;font-weight: 300;}
+.engineer_info h3 {font-weight: 600;color: #FFF;font-size: 25px;}
+.engineer_info span {font-size: 16px;font-weight: 500;}
+.our_engineer:hover .engineer_info:before{width: 240px; height: 240px;bottom: -40px;}
+
+.light_overlay:before {content: "";position: absolute;left: 0;top: 0;width: 100%;height: 100%;background:#f5f5f5;opacity: 0.9;z-index: 0;}
+.light_overlay > * {z-index: 1;position: relative;}
+.save_title :where(h1,h2) {
+    color: rgb(7, 0, 0);
+}
+.save_title {display: flex;flex-direction: column;align-items: center; margin-bottom: 70px;}
+.save_title span {font-size: 14px;color: rgb(255, 255, 255);background: var(--theme-color);padding: 2px 30px;border-radius: 30px;position: relative;z-index: 1;overflow: hidden;margin-bottom: 5px;}
+.save_title span:before {content: "";position: absolute;left: 0;bottom: 0;width: 100%;height: 50%;background: black;opacity: 0.1;z-index: -1;}
+.save_title h2 {font-size: 45px;font-weight: 200;margin: 0;}
+
+
+
+.subscribe_us {display: flex;flex-direction: column;text-align: center;}
+.subscribe_us span {font-size: 18px;color: #717171;margin-bottom: 10px;}
+.subscribe_us h3 {font-size: 27px;}
+.subscribe_us h3 i {color: var(--theme-color);font-style: normal;}
+.subscribe_us h2 {font-size: 40px;margin-bottom: 30px;}
+form.subscribeForm {display: flex;margin: 0 auto;background: var(--theme-dark);padding: 15px;border-radius: 5px;column-gap: 10px;width: 100%;}
+form.subscribeForm input {background: #5a5858;height: 51px;border: 0;border-radius: 5px;padding: 10px 20px;color: #FFF;flex: auto;}
+input::placeholder {opacity: 0.8;color: #FFF;}
+form.subscribeForm button {margin: -15px -15px -15px 10px;border-radius: 0 5px 5px 0;background: var(--theme-color);padding: 0 20px;min-width: 190px;color: #FFF;font-size: 18px;font-weight: 500;}
+.contact-form .btn{float:right}
+
+
+/*+++++++++++ Media Querry +++++++++*/
+
+@media (max-width:1600px) {
+    .save_appeal_text{width:70%;padding-right:20%;min-height:550px}    
+    .save_appeal_text h3{font-size:40px}
+    .save_appeal_img img{width:100%}
+    .save_appeal_img{max-width:50%;top:70px}
+    }
+
+
+    @media (max-width:1280px){
+        nav > ul {column-gap: 20px;}
+        .logo img {width: 100%}
+        .darkSlider_text h3{font-size:55px}
+        nav ul{column-gap:30px}
+        .save-service-overlay{padding:0 30px}
+        .double_title h2{font-size:60px}
+        .double_title>i{font-size:100px}
+        .save-service-overlay h3{margin-top:20px;font-size:18px}
+        .save-service-overlay p{font-size:12px;line-height:1.6}
+        .save_cause_details{padding:30px 20px 20px}
+        .save_cause_details .save_progress{margin:40px -20px 0}
+        .save_cause_details h3{font-size:16px}
+        .save_appeal_text h3{font-size:30px}
+        .save_appeal_text{min-height:400px}
+        .engineer_info{width:290px;height:290px}
+        .engineer_info h3{font-size:20px}
+        .engineer_info span{font-size:14px}
+        .theme-btn{min-width:100px;font-size:14px;min-height:45px;padding:5px 20px}
+        .us_help h3{font-size:35px}
+        .simple_service{padding:0}
+        .us_event{column-gap:20px;align-items:flex-start}
+        .event_thumb{width:270px}
+        .event_thumb img{width:100%}
+        .event_date{right:-20px;top:10px;padding:2px 10px}
+        .event_date i{font-size:12px}
+        span.address{margin:0 0 10px}
+        .event_text h3{font-weight:500}
+        .event_text p{line-height:1.6}
+        .featured_event{min-height:520px;background:#5e5e5e}
+        .featured_event_text{position:relative;left:0}
+        .save_review_quote{font-size:12px}
+        .engineer_img img{width:80px}
+        }
+        
+        @media (max-width:990px){
+        header{display:none}
+        .responsive_menu{display:flex}
+        .darkSlider_text h3{font-size:40px}
+        .save_service{max-height:230px;margin-bottom:20px}
+        .save_service>img{width:auto;max-height:230px}
+        .block{padding:120px 0}
+        .save_appeal{flex-direction:column}
+        .save_appeal_text{min-height:auto;width:100%;padding:30px}
+        .save_appeal_text:after,.save_appeal_text:before{left:0;width:100%}
+        .save_appeal_img{position:relative;top:0;width:100%;height:auto;max-width:none;border:10px solid #FFF}
+        .join_compaign h2{font-size:32px}
+        .join_compaign p{font-size:13px}
+        .offset-1{margin:0}
+        .subscribe_us h3{font-size:22px}
+        .subscribe_us h2{font-size:35px}
+        .usGallery{column-gap:10px;row-gap:10px}
+        .double_title h2{font-size:40px}
+        .double_title>i{font-size:70px}
+        .double_title h2:before{width:40px;height:40px}
+        .slick-next{right:0!important}
+        .slick-prev{left:0!important}
+        form.subscribeForm{flex-direction:column}
+        form.subscribeForm input{border-radius:0}
+        form.subscribeForm button{margin:0;min-height:60px;border-radius:0 0 5px 5px}
+        form.subscribeForm>:first-child{border-radius:5px 5px 0 0}
+        
+        .coloredText{font-size: 14px}
+        .simpleSlide_Text h2{font-size: 35px}
+        .container-fluid.pe-5.ps-5{padding: 0 15px!important}
+        .simpleSlide_Text h3 {font-size: 30px}
+    
+        .appealSection{flex-direction:column}
+        .appeal_Text{padding:30px}
+        .usFormBox.overlap{margin:0;padding:70px 20px}
+        .theme-btn ion-icon.compact{margin-left:-13px}
+        .us_testimonials{flex-direction:column;}
+       
+        .overlapUp{margin:0}
+        .testimonial_img{min-width:200px;height:200px;width:200px}
+        .testimonial_img img{width:100%}
+        .us_testimonials blockquote{font-size:13px}
+        .usPageTopWrap{flex-direction:column;justify-content:center;align-items:baseline}
+        .breadCrumbs{margin-left:0;margin-top:10px}
+        .usPageTop{min-height:170px}
+        .simpleSlide_Text h2{font-size:25px}
+        span.coloredText{font-size:12px}
+        .breadCrumbs ul{font-size:13px}
+        .comment>img{width:60px}
+        .comment-inner{padding-left:10px}
+        .comment-inner>p{font-size:12px}
+        .basic_info_wrap{flex-direction:column;align-items:start}
+        .become-volunteer{padding: 30px}
+        }
+        
+        
+        @media (max-width:600px){
+        .subscribe_us h3{font-size:20px}
+        .subscribe_us h2{font-size:28px}
+        .join_compaign h2{font-size:25px}
+        .save_service>img{width:100%;max-height:initial}
+        .save_service{max-height:initial}
+        .darkSlider_text h3{font-size:25px}
+        .sponsors{column-gap:10px;flex-wrap:wrap}
+        .sponsor_logo{flex:calc(50% - 5px)}
+        .us_about h3{font-size:22px}
+        .us_gallery{grid-template-columns:auto}
+        .vertical-layout{grid-row:unset}
+        .horizontal-layout{grid-column-end:unset}
+        .us_event{padding-right:0}
+        }
+        
+        
+        
+        @media (max-width:480px){
+        p{clear: both}
+        .alignright, .alignleft{width: 100%;}
+        }
+        
