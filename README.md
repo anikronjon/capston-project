@@ -1,6 +1,6 @@
 ### Clone the project
 ```shell
-git pull https://github.com/anikronjon/capston-project.git
+git clone https://github.com/anikronjon/capston-project.git
 ```
 
 ### Go Inside the project
