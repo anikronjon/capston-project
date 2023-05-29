@@ -1,12 +1,14 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Initiate Payment</title>
-</head>
-<body>
-    <p>Redirecting to Bikash payment page...</p>
-    <script>
-        window.location.href = "{{ payment_url }}";
+{% extends 'base.html' %}
+
+{% block content %}
+    <h2>Donate For Humanity</h2>
+    <form action="{% url 'mainapp:charge' %}" method="post">
+    {% csrf_token %}
+    <script src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+            data-key="{{ public_key }}"
+            data-description="Donate"
+            data-ammount="400"
+            data-locale="auto">
     </script>
-</body>
-</html>
+    </form>
+{% endblock %}
