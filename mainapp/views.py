@@ -36,11 +36,5 @@ def payment(request):
 
 
 def charge(request):
-    if request.method == 'POST':
-        charge = stripe.Charge.create(
-        ammount=400,
-        currency='usd',
-        description='Donate',
-        source=request.POST['stripeToken']
-    )
+
     return render(request, 'mainapp/success.html')
