@@ -24,3 +24,9 @@ venv\Scripts\activate
 ```shell
 pip install -r requirements.txt
 ```
+
+
+### Now Run the project
+```shell
+python manage.py runserver
+```
