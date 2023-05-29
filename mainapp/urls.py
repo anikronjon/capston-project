@@ -8,6 +8,10 @@ urlpatterns = [
     path('service/', views.service_view, name='service_page'),
     path('project/', views.project_view, name='project_page'),
     path('contact/', views.contact_view, name='contact_page'),
-    path('payment/', views.payment_view, name='paymentPage'),
-    path('success/', views.success, name='success'),
+    path('volunteer/', views.volunteer_view, name='volunteer'),
+    path('donate/', views.donate, name='paymentPage'),
+    path('donate/success/', views.donation_success, name='donation_success'),
+    path('donate/cancel/', views.donation_cancel, name='donation_cancel'),
+    path('checkout/', views.payment_checkout, name='payment'),
+
 ]
