@@ -1,6 +1,18 @@
-{% extends 'base.html' %}
 
-{% block content %}
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CARBON NEUTRAL</title>
+    <link rel="stylesheet" href="{% static '' %}css/bootstrap.min.css">
+    <link rel="stylesheet" href="{% static '' %}css/fancyBox.min.css">
+    <link rel="stylesheet" href="{% static '' %}css/style.css">
+</head>
+<body>
+<div class="login-box">
     <h2>Donate For Humanity</h2>
     <form action="{% url 'mainapp:charge' %}" method="post">
     {% csrf_token %}
@@ -11,4 +23,7 @@
             data-locale="auto">
     </script>
     </form>
-{% endblock %}
+
+    </div>
+</body>
+</html>

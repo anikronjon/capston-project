@@ -8,26 +8,27 @@
             <div class="container">
                 <br>
                 <br>
-                <br>
+                <br><br> <br><br><br>
+                    <br> <br><br><br>
                 <div class="double_title">
-                    
+
                     <h2>Available Services</h2>
                 </div>
-                
+
                 <div class="row row-gap-30 ev_slider">
 
                     <div class="col-lg-4 col-md-12">
                         <div class="save_cause">
                             <div class="save_cause_img">
                                 <img src="{% static '' %}assets/images/home decore/4.jpg" alt=" Contribute for saving climate ">
-                                <a class="cause_cat" href="project.html" title="">Order Now</a>
+                                <a class="cause_cat" href="{% url 'mainapp:payment' %}" title="">Order Now</a>
                             </div>
                             <div class="save_cause_details">
-                                <h3> <a href="project.html" title=""> Contribute to Stop Wildfire </a></h3>
+                                <h3> <a href="project.html" title=""> Tree Nursery </a></h3>
                                 <p>Supporting the global response to the threat of climate change. Advancing the implementation of the Convention, the Kyoto Protocol and the Paris Agreement</p>
-                        
-                                <a class="seeMore" href="{% url 'mainapp:service_page' %}" title="">See Details</a>
-                                
+
+                                <a class="seeMore" href="{% url 'mainapp:payment' %}" title="">See Details</a>
+
                             </div>
                         </div><!-- Save planet  -->
                     </div>
@@ -36,14 +37,14 @@
                         <div class="save_cause">
                             <div class="save_cause_img">
                                 <img src="{% static '' %}assets/images/home decore/3.jpg" alt="Contribute for saving climate">
-                                <a class="cause_cat" href="" title="">Order Now</a>
+                                <a class="cause_cat" href="{% url 'mainapp:payment' %}" title="">Order Now</a>
                             </div>
                             <div class="save_cause_details">
-                                <h3> <a href="project.html" title=""> Contribute to Reduce Impact </a></h3>
+                                <h3> <a href="project.html" title=""> Home Decore </a></h3>
                                 <p>Supporting the global response to the threat of climate change. Advancing the implementation of the Convention, the Kyoto Protocol and the Paris Agreement</p>
-                              
 
-                                <a class="seeMore" href="service.html" title="">See Details</a>
+
+                                <a class="seeMore" href="{% url 'mainapp:payment' %}" title="">See Details</a>
                             </div>
                         </div><!-- Save planet -->
                     </div>
@@ -51,22 +52,22 @@
                     <div class="col-lg-4 col-md-12">
                         <div class="save_cause">
                             <div class="save_cause_img">
-                                <img src="{% static '' %}assets/images/home decore/4.jpg" alt="Contribute for saving climate">
-                                <a class="cause_cat" href="project.html" title="">Order Now</a>
+                                <img src="{% static '' %}assets/images/home decore/3.jpg" alt="Contribute for saving climate">
+                                <a class="cause_cat" href="{% url 'mainapp:payment' %}" title="">Order Now</a>
                             </div>
                             <div class="save_cause_details">
                                 <h3> <a href="project.html" title=""> Contribute to Save Glacier </a></h3>
                                 <p>Supporting the global response to the threat of climate change. Advancing the implementation of the Convention, the Kyoto Protocol and the Paris Agreement</p>
-                            
 
-                                <a class="seeMore" href="service.html" title="">See Details</a>
+
+                                <a class="seeMore" href="{% url 'mainapp:payment' %}" title="">See Details</a>
                             </div>
                         </div><!-- Save planet -->
                     </div>
 
 
                 </div>
-              
+
             </div>
         </div>
     </section>
@@ -78,10 +79,10 @@
             <br>
             <br>
             <div class="double_title">
-                
+
                 <h2> Mega Projects</h2>
             </div>
-            
+
             <div class="row row-gap-30 ev_slider">
 
                 <div class="col-lg-4 col-md-12">
@@ -89,14 +90,14 @@
                         <div class="save_cause_img">
                             <a class="cause_cat" href="project.html" title=""> Order Now </a>
                             <img src="{% static '' %}assets/images/deforestation/1.jpg" alt=" Contribute for saving climate ">
-                            
+
                         </div>
                         <div class="save_cause_details">
                             <h3> <a href="project.html" title=""> We Have Plans for Highways </a></h3>
                             <p>Supporting the global response to the threat of climate change. Advancing the implementation of the Convention, the Kyoto Protocol and the Paris Agreement</p>
-                    
+
                             <a class="seeMore" href="../accounts/login.html" title="">See Details</a>
-                            
+
                         </div>
                     </div><!-- Save planet  -->
                 </div>
@@ -106,12 +107,12 @@
                         <div class="save_cause_img">
                             <a class="cause_cat" href="project.html" title=""> Order Now </a>
                             <img src="{% static '' %}assets/images/deforestation/2.jpg" alt="Contribute for saving climate">
-                           
+
                         </div>
                         <div class="save_cause_details">
                             <h3> <a href="project.html" title=""> Enroll our Plan now </a></h3>
                             <p>Supporting the global response to the threat of climate change. Advancing the implementation of the Convention, the Kyoto Protocol and the Paris Agreement</p>
-                          
+
 
                             <a class="seeMore" href="../accounts/login.html" title="">See Details</a>
                         </div>
@@ -123,12 +124,12 @@
                         <div class="save_cause_img">
                             <a class="cause_cat" href="project.html" title=""> Order Now </a>
                             <img src="{% static '' %}assets/images/deforestation/3.jpg" alt="Contribute for saving climate">
-                           
+
                         </div>
                         <div class="save_cause_details">
                             <h3> <a href="project.html" title=""> Contribute Plant a Tree </a></h3>
                             <p>Supporting the global response to the threat of climate change. Advancing the implementation of the Convention, the Kyoto Protocol and the Paris Agreement</p>
-                        
+
 
                             <a class="seeMore" href="../accounts/login.html" title="">See Details</a>
                         </div>
@@ -137,13 +138,13 @@
 
 
             </div>
-          
+
         </div>
     </div>
 </section>
 
 {% endblock %}
-    
+
 
 <footer>
     <div class="block save_dark pattern3">
@@ -169,13 +170,13 @@
 
                     <div class="everCare_contact_widget">
                         <ul>
-                        <li> 8954 King Town, Phase 11</li> 
-                        <li>  Contact@succor.net</li> 
-                        <li>  0090-123456-789</li> 
-                        <li>  0090-123456-789</li> 
+                        <li> 8954 King Town, Phase 11</li>
+                        <li>  Contact@succor.net</li>
+                        <li>  0090-123456-789</li>
+                        <li>  0090-123456-789</li>
                         </ul>
 
-                    
+
                     </div><!-- Ever Care Contact Widget -->
                 </div>
 
@@ -210,12 +211,12 @@
 
                 <div class="col-lg-4 col-md-6 col-sm-12">
                     <div class="line_title"> <h3>Meet Us Anytime</h3> </div>
-                     
+
                     <ul>
-                        <li> 8954 King Town, Phase 11</li> 
-                        <li>  Contact@succor.net</li> 
-                        <li>  0090-123456-789</li> 
-                        <li>  0090-123456-789</li> 
+                        <li> 8954 King Town, Phase 11</li>
+                        <li>  Contact@succor.net</li>
+                        <li>  0090-123456-789</li>
+                        <li>  0090-123456-789</li>
                         </ul>
 
 

@@ -3,11 +3,14 @@
 
 
 {% block content %}
-<h2>This is registration page</h2>
+<div class="login-box fullbg ">
+    <br> <br> <br>
+<h2> Register Here!</h2>
 <p><a href="{% url 'accounts:login' %}">Already has an account >></a> </p>
     <form method="post">
         {% csrf_token %}
         {{ form.as_p }}
         <input type="submit" value="Sign Up">
     </form>
+</div>
 {% endblock %}

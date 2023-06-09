@@ -40,13 +40,12 @@
                         <div class="save_cause">
                             <div class="save_cause_img">
                                 <img src="{% static '' %}assets/images/calamatis/4.jpg" alt=" Contribute for saving climate ">
-                                <a class="cause_cat" href="project.html" title="">Save Planet</a>
+
                             </div>
                             <div class="save_cause_details">
-                                <h3> <a href="project.html" title=""> Contribute to Stop Wildfire </a></h3>
+                                <h3> <a href="project.html" title=""> Wildfire </a></h3>
                                 <p>Supporting the global response to the threat of climate change. Advancing the implementation of the Convention, the Kyoto Protocol and the Paris Agreement</p>
 
-                                <a class="seeMore" href="service.html" title="">See Details</a>
 
                             </div>
                         </div><!-- Save planet  -->
@@ -56,14 +55,12 @@
                         <div class="save_cause">
                             <div class="save_cause_img">
                                 <img src="{% static '' %}assets/images/calamatis/3.jpg" alt="Contribute for saving climate">
-                                <a class="cause_cat" href="project.html" title="">Save Planet</a>
+
                             </div>
                             <div class="save_cause_details">
-                                <h3> <a href="project.html" title=""> Contribute to Reduce Impact </a></h3>
+                                <h3> <a href="project.html" title=""> Solar Storms </a></h3>
                                 <p>Supporting the global response to the threat of climate change. Advancing the implementation of the Convention, the Kyoto Protocol and the Paris Agreement</p>
 
-
-                                <a class="seeMore" href="service.html" title="">See Details</a>
                             </div>
                         </div><!-- Save planet -->
                     </div>
@@ -72,19 +69,15 @@
                         <div class="save_cause">
                             <div class="save_cause_img">
                                 <img src="{% static '' %}assets/images/calamatis/1.jpg" alt="Contribute for saving climate">
-                                <a class="cause_cat" href="project.html" title="">Save Planet</a>
+
                             </div>
                             <div class="save_cause_details">
-                                <h3> <a href="project.html" title=""> Contribute to Save Glacier </a></h3>
+                                <h3> <a href="project.html" title=""> Glacier Melting  </a></h3>
                                 <p>Supporting the global response to the threat of climate change. Advancing the implementation of the Convention, the Kyoto Protocol and the Paris Agreement</p>
 
-
-                                <a class="seeMore" href="service.html" title="">See Details</a>
                             </div>
                         </div><!-- Save planet -->
                     </div>
-
-
                 </div>
 
             </div>
@@ -100,8 +93,8 @@
                         <h3>Every <strong>Country and City </strong> Deserves Proper <strong>Environment Protection </strong> And <strong>Health</strong> Facilities</h3>
                         <p>Nostrud tem exrcitation duis laboris nisi ut aliquip sed duis aute cupidata con proident sunt culpa.. Nostrud tem exrcitation duis laboris nisi ut aliquip sed duis aute  </p>
                         <div class="butttons_group">
-                            <a class="theme-btn white"  data-bs-toggle="modal" data-bs-target="#donationModal" href="#" title="">Donate Now</a>
-                            <a class="theme-btn dark" href="volunteer.html" title="">Volunteer</a>
+                            <a class="theme-btn white"  data-bs-toggle="modal" data-bs-target="#donationModal" href="{% url 'mainapp:payment' %}" title="">Donate Now</a>
+                            <a class="theme-btn dark" href="{% url 'mainapp:volunteer' %}" title="">Volunteer</a>
                         </div>
                     </div>
                     <div class="save_appeal_img  ">
@@ -119,9 +112,9 @@
                     <div class="col-lg-10 offset-1">
                         <div class="join_compaign">
                             <h2 class="text-white">Just A <strong>Little Help</strong> Can Make Earth <strong>Environment Safer</strong></h2>
-                            <p>Charity fundraising ideas, and fundraise or crowdfund for an Bangladeshi  charity close to your heart. With over 1500 Bnagladeshi charities to choose from raising money for your cause is easy.</p>
+                            <p>Charity fundraising ideas, and fundraise or crowdfund for a Bangladeshi  charity close to your heart. With over 1500 Bnagladeshi charities to choose from raising money for your cause is easy.</p>
 
-                            <a class="theme-btn  " href="volunteer.html" title="" >Join Our Compaign</a>
+                            <a class="theme-btn" href="{% url 'mainapp:volunteer' %}" title="">Join Us Now</a>
                         </div>
                     </div>
                 </div>
@@ -134,4 +127,3 @@
 
 
 
-</html>
